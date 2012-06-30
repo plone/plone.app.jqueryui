@@ -1,0 +1,26 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.js.jqueryui">
+
+  <browser:page
+      name="demo.jqueryui"
+      for="*"
+      template="demo.pt"
+      permission="zope2.View"
+      />
+  <browser:resource
+     name="demo.jqueryui.js"
+     file="demo.js"
+     />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="plone.app.jqueryui.demo"
+      directory="profile"
+      description='Extension profile for plone.app.jqueryui.demo.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>
