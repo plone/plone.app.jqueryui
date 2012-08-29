@@ -5,8 +5,13 @@
     i18n_domain="plone.app.jqueryui">
 
   <browser:resourceDirectory
-    name="plone.app.jqueryui"
-    directory="resources"
+    name="jquery-ui"
+    directory="resources/js"
+    />
+
+  <browser:resourceDirectory
+    name="jquery-ui-themes"
+    directory="resources/css"
     />
 
   <genericsetup:registerProfile

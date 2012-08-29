@@ -1,3 +1,5 @@
+VERSION = '1.8.16'
+
 DEPS = {}
 
 DEPS['ui.core']     =tuple()
@@ -36,6 +38,9 @@ DEPS['effects.slide']    =('effects.core',)
 DEPS['effects.transfer'] =('effects.core',)
 
 JQUERYUI_DEPENDENCIES = DEPS
+
+CSS_RESOURCE_ID = '++resource++jquery-ui-themes/sunburst/jqueryui.css'
+PATCH_RESOURCE_ID = '++resource++jquery-ui-themes/sunburst-patch.css'
 
 ORDERED_PLUGINS = ['ui.core','ui.widget','ui.mouse','ui.position',
                    'ui.draggable','ui.droppable','ui.resizable','ui.selectable',
